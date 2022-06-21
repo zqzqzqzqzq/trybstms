@@ -63,25 +63,25 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<!--mybatis×Ô¶¯Éú³É´úÂë²å¼þ -->
+			<!--mybatisè‡ªåŠ¨ç”Ÿæˆä»£ç æ’ä»¶ -->
 			<plugin>
 				<groupId>org.mybatis.generator</groupId>
 				<artifactId>mybatis-generator-maven-plugin</artifactId>
 				<version>1.3.7</version>
 				<configuration>
-					<!-- generator ¹¤¾ßÅäÖÃÎÄ¼þµÄÎ»ÖÃ -->
+					<!-- generator å·¥å…·é…ç½®æ–‡ä»¶çš„ä½ç½® -->
 					<configurationFile>src/main/resources/generatorConfig.xml</configurationFile>
-					<!-- ÊÇ·ñ¸²¸Ç£¬true±íÊ¾»áÌæ»»Éú³ÉµÄJAVAÎÄ¼þ£¬falseÔò²»¸²¸Ç -->
+					<!-- æ˜¯å¦è¦†ç›–ï¼Œtrueè¡¨ç¤ºä¼šæ›¿æ¢ç”Ÿæˆçš„JAVAæ–‡ä»¶ï¼Œfalseåˆ™ä¸è¦†ç›– -->
 					<overwrite>true</overwrite>
-					<!--ÔÊÐíÒÆ¶¯Éú³ÉµÄÎÄ¼þ -->
+					<!--å…è®¸ç§»åŠ¨ç”Ÿæˆçš„æ–‡ä»¶ -->
 					<verbose>true</verbose>
 				</configuration>
 				<dependencies> 
-				    <!--mysqlÇý¶¯°ü -->	     
+				    <!--mysqlé©±åŠ¨åŒ… -->	     
 					<dependency>
 						<groupId>mysql</groupId>
 						<artifactId>mysql-connector-java</artifactId>
-						<version>5.1.26</version>
+						<version>8.0.28</version>
 					</dependency>		
 				</dependencies>
 			</plugin>
